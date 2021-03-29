@@ -428,6 +428,7 @@ template {
   src: url("../../fonts/Inter-Black.eot?#iefix") format("embedded-opentype"), url("../../fonts/Inter-Black.woff") format("woff"), url("../../fonts/Inter-Black.woff2") format("woff2"), url("../../fonts/Inter-Black.ttf") format("truetype"), url("../../fonts/Inter-Black.svg#Inter") format("svg");
 }
 
+/* stylelint-disable number-max-precision */
 .screen-reader-text, .gform_body .gform_validation_container {
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);
@@ -604,7 +605,7 @@ a.is-external-link.no-external-link-indicator::after {
   }
   .menu-item > a {
     align-items: center;
-    color: #fff;
+    color: #f0fafb;
     display: inline-flex;
     font-size: var(--font-size-main-level);
     font-weight: 700;
@@ -637,7 +638,7 @@ a.is-external-link.no-external-link-indicator::after {
   }
   .menu-item > a:hover,
   .menu-item > a:focus {
-    color: #fff;
+    color: #f0fafb;
   }
   .sub-menu.toggled-on li a,
   .menu-item.menu-item-has-children:hover a,
@@ -655,7 +656,7 @@ a.is-external-link.no-external-link-indicator::after {
     transition: all 0.2s cubic-bezier(0.19, 1, 0.22, 1);
   }
   .sub-menu {
-    background-color: #fff;
+    background-color: #f0fafb;
     border-bottom: 1px solid rgba(42, 45, 62, 0.05);
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
@@ -766,7 +767,7 @@ a.is-external-link.no-external-link-indicator::after {
   /* stylelint-enable */
   .menu-item-has-children::before {
     /* stylelint-disable sh-waqar/declaration-use-variable */
-    border-color: transparent transparent #fff;
+    border-color: transparent transparent #f0fafb;
     border-style: solid;
     border-width: 0 5px 5px;
     /* stylelint-enable */
@@ -2660,7 +2661,7 @@ pre {
 }
 
 .site-title {
-  color: #fff;
+  color: #f0fafb;
   line-height: 0;
   margin: 0;
   /* stylelint-disable a11y/no-display-none */
@@ -2672,7 +2673,7 @@ pre {
 
 .site-title a {
   align-items: center;
-  color: #fff;
+  color: #f0fafb;
   display: flex;
 }
 
@@ -2756,7 +2757,7 @@ pre {
   background-color: #545773;
   border: 0;
   border-radius: 3px;
-  color: #fff;
+  color: #f0fafb;
   cursor: pointer;
   display: inline-block;
   font-family: "Inter", -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
@@ -2939,7 +2940,7 @@ input[type="search"] {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  background-color: #fff;
+  background-color: #f0fafb;
   border: solid 2px #d9d9d9;
   border-radius: 3px;
   box-sizing: border-box;
@@ -2989,7 +2990,7 @@ input[type="month"]:focus,
 input[type="week"]:focus,
 input[type="email"]:focus,
 input[type="search"]:focus {
-  background-color: #fff;
+  background-color: #f0fafb;
   border: 2px solid #bababa;
   outline: 0;
 }
@@ -3020,7 +3021,7 @@ input[type="search"]:focus::placeholder {
 }
 
 select:focus {
-  background-color: #fff;
+  background-color: #f0fafb;
   border: 2px solid #bababa;
 }
 
@@ -3051,7 +3052,7 @@ input[type="checkbox"] + label {
 input[type="radio"] + label::before,
 input[type="checkbox"] + label::before {
   align-self: center;
-  background-color: #fff;
+  background-color: #f0fafb;
   background-position: center;
   background-repeat: no-repeat;
   border-color: #545773;
@@ -3335,12 +3336,12 @@ input[type="checkbox"]:not(:checked):not(:focus) + label:hover::before {
 }
 
 .gutenberg-content.wp-block-gallery {
-  color: #fff;
+  color: #f0fafb;
   overflow: hidden;
 }
 
 .gutenberg-content.wp-block-gallery figcaption {
-  color: #fff;
+  color: #f0fafb;
   font-size: var(--font-size-small);
   line-height: 1.55;
   margin-bottom: var(--margin-between-text-elements);
@@ -3654,13 +3655,13 @@ kbd {
   background-color: #eaf1f8;
   border: 1px solid #ccc;
   border-radius: 4px;
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px #fff inset;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px #f0fafb inset;
   color: #545773;
   display: inline-block;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.4;
   padding: 0 .5rem;
-  text-shadow: 0 1px 0 #fff;
+  text-shadow: 0 1px 0 #f0fafb;
   white-space: nowrap;
 }
 
@@ -3739,7 +3740,7 @@ ul.tags li a:not(.button):not(.no-text-link):focus {
 .block-hero-fp {
   align-items: center;
   background-color: #2a2d3e;
-  color: #fff;
+  color: #f0fafb;
   display: flex;
   height: 100vh;
   max-height: 800px;
@@ -3782,7 +3783,7 @@ ul.tags li a:not(.button):not(.no-text-link):focus {
 
 .block-hero-fp h1,
 .block-hero-fp p {
-  color: #fff;
+  color: #f0fafb;
 }
 
 .block-hero-fp h1 {
@@ -3835,7 +3836,7 @@ ul.tags li a:not(.button):not(.no-text-link):focus {
 
 .block-hero-fp .featured ul,
 .block-hero-fp .featured li {
-  color: #fff;
+  color: #f0fafb;
   margin: 0;
   padding: 0;
 }
@@ -3854,7 +3855,7 @@ ul.tags li a:not(.button):not(.no-text-link):focus {
 
 .block-hero-fp .featured a {
   align-items: center;
-  color: #fff;
+  color: #f0fafb;
   display: inline-flex;
   opacity: .5;
   transition: all .2s;
@@ -3874,7 +3875,7 @@ ul.tags li a:not(.button):not(.no-text-link):focus {
 
 .block-hero-fp .featured a:not(:hover) .text-glyph,
 .block-hero-fp .featured a:not(:focus) .text-glyph {
-  fill: #fff;
+  fill: #f0fafb;
 }
 
 .block-hero-fp .featured a:not(:hover) .text-invert,
@@ -3942,6 +3943,63 @@ ul.tags li a:not(.button):not(.no-text-link):focus {
   margin: 6rem auto 2rem;
 }
 
+.block-introduction .cols {
+  display: grid;
+  /* autoprefixer: off */
+  grid-auto-rows: minmax(0, auto);
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@supports not (display: grid) {
+  .block-introduction .cols {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+  .block-introduction .cols > div {
+    margin-bottom: 16px;
+    margin-right: 16px;
+    width: calc(33.33333% - 16px);
+  }
+  .block-introduction .cols > div:nth-child(3n+3) {
+    margin-right: 0;
+  }
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .block-introduction .cols {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+  .block-introduction .cols > div {
+    margin-bottom: 16px;
+    margin-right: 16px;
+    width: calc(33.33333% - 16px);
+  }
+  .block-introduction .cols > div:nth-child(3n+3) {
+    margin-right: 0;
+  }
+}
+
+@supports (-ms-ime-align: auto) {
+  .block-introduction .cols {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+  .block-introduction .cols > div {
+    margin-bottom: 16px;
+    margin-right: 16px;
+    width: calc(33.33333% - 16px);
+  }
+  .block-introduction .cols > div:nth-child(3n+3) {
+    margin-right: 0;
+  }
+}
+
 .site-footer .top {
   background-color: transparent;
   padding: 16px;
@@ -3993,7 +4051,7 @@ ul.tags li a:not(.button):not(.no-text-link):focus {
 }
 
 .site-footer .back-to-top.has-dark-bg svg {
-  fill: #fff;
+  fill: #f0fafb;
 }
 
 .site-footer .back-to-top.is-visible, .site-footer .back-to-top.fade-out {
@@ -4097,7 +4155,7 @@ div.lazy {
 /* stylelint-enable */
 .page-numbers {
   align-items: center;
-  background-color: #fff;
+  background-color: #f0fafb;
   border-bottom: 2px solid #ece6f2;
   border-left: 1px solid #ece6f2;
   border-right: 1px solid #ece6f2;
@@ -4138,13 +4196,13 @@ a.page-numbers:hover,
 a.page-numbers:focus {
   background-color: #2a2d3e;
   border-color: #2a2d3e;
-  color: #fff;
+  color: #f0fafb;
 }
 
 .page-numbers.current {
   background-color: #2a2d3e;
   border-color: #2a2d3e;
-  color: #fff;
+  color: #f0fafb;
 }
 
 .page-numbers.next,
@@ -4165,7 +4223,7 @@ a.page-numbers:focus {
 /* stylelint-disable selector-class-pattern */
 div.validation_error {
   background-color: #e1b3b2;
-  color: #fff;
+  color: #f0fafb;
   font-size: var(--font-size-medium);
   font-weight: 700;
   margin-bottom: 2rem;
@@ -4173,7 +4231,7 @@ div.validation_error {
 }
 
 div.validation_error:focus {
-  color: #fff;
+  color: #f0fafb;
 }
 
 body *[aria-invalid="true"] {
@@ -4297,7 +4355,7 @@ body *[aria-invalid="true"] {
 /* stylelint-enable selector-class-pattern */
 .block-search,
 .block-search-results {
-  background-color: #fff;
+  background-color: #f0fafb;
 }
 
 .block-search form {
@@ -4465,7 +4523,7 @@ body *[aria-invalid="true"] {
   background-color: #545773;
   border: 0;
   border-radius: 3px;
-  color: #fff;
+  color: #f0fafb;
   cursor: pointer;
   display: inline-block;
   font-family: "Inter", -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;

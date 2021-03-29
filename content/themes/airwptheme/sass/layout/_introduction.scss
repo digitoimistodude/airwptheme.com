@@ -1,0 +1,5 @@
+.block-introduction {
+  .cols {
+    @include grid(3);
+  }
+}
