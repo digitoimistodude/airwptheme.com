@@ -2082,7 +2082,7 @@ a.is-external-link.no-external-link-indicator::after {
 }
 
 .block {
-  background-color: #fff;
+  background-color: #f0fafb;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -3747,6 +3747,24 @@ ul.tags li a:not(.button):not(.no-text-link):focus {
   text-align: center;
 }
 
+.block-hero-fp .button-wrapper {
+  opacity: 1;
+}
+
+.block-hero-fp .button {
+  background-color: #60f4ea;
+  color: #2a2d3e;
+  display: inline-flex;
+}
+
+.block-hero-fp .button svg {
+  margin-right: 1rem;
+}
+
+.block-hero-fp .button:hover, .block-hero-fp .button:focus {
+  background-color: #159d94;
+}
+
 @media (max-width: 1200px) {
   .block-hero-fp {
     height: auto;
@@ -3907,7 +3925,7 @@ ul.tags li a:not(.button):not(.no-text-link):focus {
 }
 
 .block-hero-fp .featured .wplift svg {
-  height: 47px;
+  height: 48px;
   transform: translateY(-4px);
 }
 

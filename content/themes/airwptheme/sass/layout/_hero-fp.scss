@@ -10,6 +10,25 @@
   padding-top: 60px;
   text-align: center;
 
+  .button-wrapper {
+    opacity: 1;
+  }
+
+  .button {
+    background-color: $color-cyan-bright;
+    color: $color-main;
+    display: inline-flex;
+
+    svg {
+      margin-right: 1rem;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $color-cyan;
+    }
+  }
+
   @media (max-width: 1200px) {
     height: auto;
     max-height: 100%;
@@ -147,7 +166,7 @@
     }
 
     .wplift svg {
-      height: 47px;
+      height: 48px;
       transform: translateY(-4px);
 
       @media (max-width: 560px) {
