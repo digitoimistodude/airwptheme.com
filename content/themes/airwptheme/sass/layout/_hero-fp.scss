@@ -1,0 +1,108 @@
+/* stylelint-disable selector-max-combinators, selector-max-compound-selectors, selector-max-specificity */
+
+.block-hero-fp {
+  background-color: $color-main;
+  color: $color-white;
+  padding-bottom: 15%;
+  padding-top: 15%;
+  text-align: center;
+
+  h1,
+  p {
+    color: $color-white;
+  }
+
+  h1 {
+    font-size: 70px;
+    margin-bottom: 3rem;
+    margin-top: 0;
+  }
+
+  p {
+    font-size: var(--font-size-default);
+    margin-bottom: 0;
+    opacity: .6;
+  }
+
+  .featured {
+    p {
+      font-size: var(--font-size-small);
+      margin: 0;
+    }
+
+    ul,
+    li {
+      color: $color-white;
+      margin: 0;
+    }
+
+    ul {
+      align-items: center;
+      display: inline-flex;
+      list-style: none;
+    }
+
+    /* stylelint-disable a11y/no-display-none */
+    a::after {
+      display: none;
+    }
+
+    a {
+      align-items: center;
+      color: $color-white;
+      display: inline-flex;
+      opacity: .5;
+      transition: all .2s;
+    }
+
+    a:hover,
+    a:focus {
+      opacity: 1;
+    }
+
+    a:not(:hover),
+    a:not(:focus) {
+      .logo-wplift path,
+      .logo-themessearch path:not(.bg) {
+        filter: grayscale(100%);
+      }
+
+      .text-glyph {
+        fill: $color-white;
+      }
+
+      .text-invert {
+        fill: #2a2d3e;
+      }
+    }
+
+    svg {
+      height: 32px;
+      margin: 0 2rem;
+      width: auto;
+    }
+
+    .hongkiat svg {
+      height: 32px;
+    }
+
+    .wpbeginner svg {
+      height: 38px;
+    }
+
+    .themessearch svg {
+      height: 25px;
+    }
+
+    .wplift svg {
+      height: 47px;
+      transform: translateY(-4px);
+    }
+
+    span {
+      display: block;
+      font-weight: 600;
+      margin: 6rem auto 2rem;
+    }
+  }
+}

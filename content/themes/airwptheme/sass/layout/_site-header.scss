@@ -19,12 +19,65 @@
 }
 
 .site-title {
+  color: $color-white;
   line-height: 0;
   margin: 0;
 
+  /* stylelint-disable a11y/no-display-none */
+  a::after {
+    display: none;
+  }
+
   a {
     align-items: center;
+    color: $color-white;
     display: flex;
+
+    .solid {
+      opacity: 0;
+    }
+
+    &:hover .solid,
+    &:focus .solid {
+      opacity: 1;
+    }
+  }
+
+  span {
+    align-items: center;
+    display: inline-flex;
+    margin-left: .5rem;
+    margin-right: .5rem;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .label {
+    font-size: var(--font-size-tiny);
+    font-weight: 700;
+  }
+
+  .by {
+    font-size: var(--font-size-tiny);
+    margin-left: 1rem;
+    margin-right: 1rem;
+    opacity: .5;
+  }
+
+  .logo-air {
+    color: $color-cyan-bright;
+    margin-right: 1rem;
+  }
+
+  .logo-dude {
+    height: 15px;
+    width: 70px;
   }
 }
 

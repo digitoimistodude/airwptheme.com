@@ -367,38 +367,65 @@ template {
 
 @font-face {
   font-display: auto;
-  font-family: "Archivo";
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url("../../fonts/archivo-v6-latin_latin-ext-regular.eot");
-  src: url("../../fonts/archivo-v6-latin_latin-ext-regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/archivo-v6-latin_latin-ext-regular.woff") format("woff"), url("../../fonts/archivo-v6-latin_latin-ext-regular.woff2") format("woff2"), url("../../fonts/archivo-v6-latin_latin-ext-regular.ttf") format("truetype"), url("../../fonts/archivo-v6-latin_latin-ext-regular.svg#Archivo") format("svg");
+  src: url("../../fonts/Inter-Regular.eot");
+  src: url("../../fonts/Inter-Regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/Inter-Regular.woff") format("woff"), url("../../fonts/Inter-Regular.woff2") format("woff2"), url("../../fonts/Inter-Regular.ttf") format("truetype"), url("../../fonts/Inter-Regular.svg#Inter") format("svg");
 }
 
 @font-face {
   font-display: auto;
-  font-family: "Archivo";
+  font-family: "Inter";
   font-style: italic;
   font-weight: 400;
-  src: url("../../fonts/archivo-v6-latin_latin-ext-italic.eot");
-  src: url("../../fonts/archivo-v6-latin_latin-ext-italic.eot?#iefix") format("embedded-opentype"), url("../../fonts/archivo-v6-latin_latin-ext-italic.woff") format("woff"), url("../../fonts/archivo-v6-latin_latin-ext-italic.woff2") format("woff2"), url("../../fonts/archivo-v6-latin_latin-ext-italic.ttf") format("truetype"), url("../../fonts/archivo-v6-latin_latin-ext-italic.svg#Archivo") format("svg");
+  src: url("../../fonts/Inter-Italic.eot");
+  src: url("../../fonts/Inter-Italic.eot?#iefix") format("embedded-opentype"), url("../../fonts/Inter-Italic.woff") format("woff"), url("../../fonts/Inter-Italic.woff2") format("woff2"), url("../../fonts/Inter-Italic.ttf") format("truetype"), url("../../fonts/Inter-Italic.svg#Inter") format("svg");
 }
 
 @font-face {
   font-display: auto;
-  font-family: "Archivo";
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../../fonts/Inter-Medium.eot");
+  src: url("../../fonts/Inter-Medium.eot?#iefix") format("embedded-opentype"), url("../../fonts/Inter-Medium.woff") format("woff"), url("../../fonts/Inter-Medium.woff2") format("woff2"), url("../../fonts/Inter-Medium.ttf") format("truetype"), url("../../fonts/Inter-Medium.svg#Inter") format("svg");
+}
+
+@font-face {
+  font-display: auto;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../../fonts/Inter-SemiBold.eot");
+  src: url("../../fonts/Inter-SemiBold.eot?#iefix") format("embedded-opentype"), url("../../fonts/Inter-SemiBold.woff") format("woff"), url("../../fonts/Inter-SemiBold.woff2") format("woff2"), url("../../fonts/Inter-SemiBold.ttf") format("truetype"), url("../../fonts/Inter-SemiBold.svg#Inter") format("svg");
+}
+
+@font-face {
+  font-display: auto;
+  font-family: "Inter";
   font-style: normal;
   font-weight: 700;
-  src: url("../../fonts/archivo-v6-latin_latin-ext-700.eot");
-  src: url("../../fonts/archivo-v6-latin_latin-ext-700.eot?#iefix") format("embedded-opentype"), url("../../fonts/archivo-v6-latin_latin-ext-700.woff") format("woff"), url("../../fonts/archivo-v6-latin_latin-ext-700.woff2") format("woff2"), url("../../fonts/archivo-v6-latin_latin-ext-700.ttf") format("truetype"), url("../../fonts/archivo-v6-latin_latin-ext-700.svg#Archivo") format("svg");
+  src: url("../../fonts/Inter-Bold.eot");
+  src: url("../../fonts/Inter-Bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/Inter-Bold.woff") format("woff"), url("../../fonts/Inter-Bold.woff2") format("woff2"), url("../../fonts/Inter-Bold.ttf") format("truetype"), url("../../fonts/Inter-Bold.svg#Inter") format("svg");
 }
 
 @font-face {
   font-display: auto;
-  font-family: "Archivo";
-  font-style: italic;
-  font-weight: 700;
-  src: url("../../fonts/archivo-v6-latin_latin-ext-700italic.eot");
-  src: url("../../fonts/archivo-v6-latin_latin-ext-700italic.eot?#iefix") format("embedded-opentype"), url("../../fonts/archivo-v6-latin_latin-ext-700italic.woff") format("woff"), url("../../fonts/archivo-v6-latin_latin-ext-700italic.woff2") format("woff2"), url("../../fonts/archivo-v6-latin_latin-ext-700italic.ttf") format("truetype"), url("../../fonts/archivo-v6-latin_latin-ext-700italic.svg#Archivo") format("svg");
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../../fonts/Inter-ExtraBold.eot");
+  src: url("../../fonts/Inter-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../../fonts/Inter-ExtraBold.woff") format("woff"), url("../../fonts/Inter-ExtraBold.woff2") format("woff2"), url("../../fonts/Inter-ExtraBold.ttf") format("truetype"), url("../../fonts/Inter-ExtraBold.svg#Inter") format("svg");
+}
+
+@font-face {
+  font-display: auto;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../../fonts/Inter-Black.eot");
+  src: url("../../fonts/Inter-Black.eot?#iefix") format("embedded-opentype"), url("../../fonts/Inter-Black.woff") format("woff"), url("../../fonts/Inter-Black.woff2") format("woff2"), url("../../fonts/Inter-Black.ttf") format("truetype"), url("../../fonts/Inter-Black.svg#Inter") format("svg");
 }
 
 .screen-reader-text, .gform_body .gform_validation_container {
@@ -2202,7 +2229,7 @@ a.is-external-link.no-external-link-indicator::after {
 /* stylelint-enable declaration-property-unit-allowed-list */
 body {
   color: #545773;
-  font-family: "Archivo", -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+  font-family: "Inter", -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
   font-size: var(--font-size-medium);
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -2364,7 +2391,7 @@ h4,
 h5,
 h6 {
   color: #2a2d3e;
-  font-family: "Archivo", -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+  font-family: "Inter", -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
   font-weight: 700;
   margin-bottom: 2.7rem;
   margin-top: 2.7rem;
@@ -2633,13 +2660,66 @@ pre {
 }
 
 .site-title {
+  color: #fff;
   line-height: 0;
   margin: 0;
+  /* stylelint-disable a11y/no-display-none */
+}
+
+.site-title a::after {
+  display: none;
 }
 
 .site-title a {
   align-items: center;
+  color: #fff;
   display: flex;
+}
+
+.site-title a .solid {
+  opacity: 0;
+}
+
+.site-title a:hover .solid,
+.site-title a:focus .solid {
+  opacity: 1;
+}
+
+.site-title span {
+  align-items: center;
+  display: inline-flex;
+  margin-left: .5rem;
+  margin-right: .5rem;
+}
+
+.site-title span:first-child {
+  margin-left: 0;
+}
+
+.site-title span:last-child {
+  margin-right: 0;
+}
+
+.site-title .label {
+  font-size: var(--font-size-tiny);
+  font-weight: 700;
+}
+
+.site-title .by {
+  font-size: var(--font-size-tiny);
+  margin-left: 1rem;
+  margin-right: 1rem;
+  opacity: .5;
+}
+
+.site-title .logo-air {
+  color: #60f4ea;
+  margin-right: 1rem;
+}
+
+.site-title .logo-dude {
+  height: 15px;
+  width: 70px;
 }
 
 .nav-container {
@@ -2679,7 +2759,7 @@ pre {
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-family: "Archivo", -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+  font-family: "Inter", -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
   font-size: var(--font-size-small);
   font-weight: 700;
   line-height: 1;
@@ -2863,7 +2943,7 @@ input[type="search"] {
   border: solid 2px #d9d9d9;
   border-radius: 3px;
   box-sizing: border-box;
-  font-family: "Archivo", -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+  font-family: "Inter", -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
   font-size: var(--font-size-medium);
   line-height: 24px;
   margin-bottom: 0;
@@ -3537,7 +3617,7 @@ table {
 
 td,
 th {
-  font-family: "Archivo", -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+  font-family: "Inter", -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
   height: 3rem;
   padding: 1rem;
 }
@@ -3653,6 +3733,116 @@ ul.tags li a:not(.button):not(.no-text-link) {
 ul.tags li a:not(.button):not(.no-text-link):hover,
 ul.tags li a:not(.button):not(.no-text-link):focus {
   border-color: rgba(6, 22, 41, 0.4);
+}
+
+/* stylelint-disable selector-max-combinators, selector-max-compound-selectors, selector-max-specificity */
+.block-hero-fp {
+  background-color: #2a2d3e;
+  color: #fff;
+  padding-bottom: 15%;
+  padding-top: 15%;
+  text-align: center;
+}
+
+.block-hero-fp h1,
+.block-hero-fp p {
+  color: #fff;
+}
+
+.block-hero-fp h1 {
+  font-size: 70px;
+  margin-bottom: 3rem;
+  margin-top: 0;
+}
+
+.block-hero-fp p {
+  font-size: var(--font-size-default);
+  margin-bottom: 0;
+  opacity: .6;
+}
+
+.block-hero-fp .featured {
+  /* stylelint-disable a11y/no-display-none */
+}
+
+.block-hero-fp .featured p {
+  font-size: var(--font-size-small);
+  margin: 0;
+}
+
+.block-hero-fp .featured ul,
+.block-hero-fp .featured li {
+  color: #fff;
+  margin: 0;
+}
+
+.block-hero-fp .featured ul {
+  align-items: center;
+  display: inline-flex;
+  list-style: none;
+}
+
+.block-hero-fp .featured a::after {
+  display: none;
+}
+
+.block-hero-fp .featured a {
+  align-items: center;
+  color: #fff;
+  display: inline-flex;
+  opacity: .5;
+  transition: all .2s;
+}
+
+.block-hero-fp .featured a:hover,
+.block-hero-fp .featured a:focus {
+  opacity: 1;
+}
+
+.block-hero-fp .featured a:not(:hover) .logo-wplift path,
+.block-hero-fp .featured a:not(:hover) .logo-themessearch path:not(.bg),
+.block-hero-fp .featured a:not(:focus) .logo-wplift path,
+.block-hero-fp .featured a:not(:focus) .logo-themessearch path:not(.bg) {
+  filter: grayscale(100%);
+}
+
+.block-hero-fp .featured a:not(:hover) .text-glyph,
+.block-hero-fp .featured a:not(:focus) .text-glyph {
+  fill: #fff;
+}
+
+.block-hero-fp .featured a:not(:hover) .text-invert,
+.block-hero-fp .featured a:not(:focus) .text-invert {
+  fill: #2a2d3e;
+}
+
+.block-hero-fp .featured svg {
+  height: 32px;
+  margin: 0 2rem;
+  width: auto;
+}
+
+.block-hero-fp .featured .hongkiat svg {
+  height: 32px;
+}
+
+.block-hero-fp .featured .wpbeginner svg {
+  height: 38px;
+}
+
+.block-hero-fp .featured .themessearch svg {
+  height: 25px;
+}
+
+.block-hero-fp .featured .wplift svg {
+  height: 47px;
+  transform: translateY(-4px);
+}
+
+.block-hero-fp .featured span {
+  display: block;
+  font-weight: 600;
+  margin: 6rem auto 2rem;
 }
 
 .site-footer .top {
@@ -3794,7 +3984,7 @@ div.lazy {
 .navigation:not(.post-navigation) .nav-links {
   align-items: flex-start;
   display: flex;
-  font-family: "Archivo", -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+  font-family: "Inter", -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
   font-size: 14px;
   justify-content: flex-start;
   margin-top: 4rem;
@@ -4181,7 +4371,7 @@ body *[aria-invalid="true"] {
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-family: "Archivo", -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+  font-family: "Inter", -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
   font-size: var(--font-size-small);
   font-weight: 700;
   line-height: 1;
