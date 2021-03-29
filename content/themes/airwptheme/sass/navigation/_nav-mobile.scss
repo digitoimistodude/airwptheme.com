@@ -287,11 +287,15 @@ $nav-open-from-direction: top;
   color: $color-hamburger-active;
 }
 
+/* stylelint-disable declaration-no-important, a11y/no-display-none */
 .nav-toggle {
   background-color: transparent;
   border: 0;
   color: $color-hamburger;
   cursor: pointer;
+
+  // Don't show mobile nav in this theme
+  display: none !important;
   font-weight: 700;
   margin: 0;
   overflow: visible;
@@ -351,11 +355,9 @@ $nav-open-from-direction: top;
   // We already have aria-label for button
   // But we want to show nav-toggle visually for seeing users
   // So we'll add has-visible-label to nav-toggle in header.php
-  /* stylelint-disable a11y/no-display-none */
   &:not(.has-visible-label) .nav-toggle-label {
     display: none;
   }
-  /* stylelint-enable */
 
   @media (max-width: $width-max-mobile - 1px) {
     display: block;

@@ -544,10 +544,11 @@ a.is-external-link.no-external-link-indicator::after {
 }
 
 /* stylelint-enable a11y/no-display-none */
+/* stylelint-disable no-descending-specificity, a11y/no-display-none */
 :root {
-  --font-size-main-level: 17px;
-  --font-size-sub-menu: 16px;
-  --padding-main-level-vertical: .6rem;
+  --font-size-main-level: 15px;
+  --font-size-sub-menu: 15px;
+  --padding-main-level-vertical: .2rem;
   --padding-main-level-horizontal: 2rem;
   --gap-dropdown: 1rem;
   --padding-sub-menu-vertical: .6rem;
@@ -559,6 +560,25 @@ a.is-external-link.no-external-link-indicator::after {
 }
 
 @media only screen and (min-width: 960px) {
+  .menu-items a::after {
+    display: none;
+  }
+  .menu-items a > svg {
+    height: 16px;
+    width: 16px;
+  }
+  .menu-items .menu-item {
+    align-items: center;
+    display: flex;
+  }
+  .menu-items .menu-item.social a {
+    padding-left: 9px;
+    padding-right: 9px;
+  }
+  .menu-items .menu-item.social.separator-left a {
+    border-left: 1px solid rgba(240, 250, 251, 0.5);
+    padding-left: 21px;
+  }
   .nav-container {
     background-color: transparent;
     position: absolute;
@@ -581,11 +601,9 @@ a.is-external-link.no-external-link-indicator::after {
 }
 
 @media only screen and (min-width: 960px) {
-  /* stylelint-disable a11y/no-display-none */
   .nav-toggle {
     display: none;
   }
-  /* stylelint-enable */
   .nav-primary {
     padding-bottom: 0;
     padding-top: 0;
@@ -604,7 +622,7 @@ a.is-external-link.no-external-link-indicator::after {
   }
   .menu-item > a {
     align-items: center;
-    color: #f0fafb;
+    color: rgba(240, 250, 251, 0.5);
     display: inline-flex;
     font-size: var(--font-size-main-level);
     font-weight: 700;
@@ -612,6 +630,7 @@ a.is-external-link.no-external-link-indicator::after {
     padding-left: var(--padding-main-level-horizontal);
     padding-right: var(--padding-main-level-horizontal);
     padding-top: var(--padding-main-level-vertical);
+    transition: all .22s;
   }
   .menu-item .sub-menu a {
     align-items: center;
@@ -1954,11 +1973,13 @@ a.is-external-link.no-external-link-indicator::after {
   color: white;
 }
 
+/* stylelint-disable declaration-no-important, a11y/no-display-none */
 .nav-toggle {
   background-color: transparent;
   border: 0;
   color: white;
   cursor: pointer;
+  display: none !important;
   font-weight: 700;
   margin: 0;
   overflow: visible;
@@ -1971,8 +1992,6 @@ a.is-external-link.no-external-link-indicator::after {
       -ms-user-select: none;
           user-select: none;
   z-index: 100000;
-  /* stylelint-disable a11y/no-display-none */
-  /* stylelint-enable */
 }
 
 @media (min-width: 960px) {
