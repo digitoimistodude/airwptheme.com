@@ -1,8 +1,17 @@
-/* stylelint-disable number-max-precision */
-@mixin box-with-shadow($border_radius: .125rem, $box_shadow_amount: 37px, $padding: 55px) {
+// Use with @include box-with-shadow();
+@mixin box-with-shadow($border_radius: 6px, $box_shadow_amount: 37px, $padding: 37px) {
   background-color: $color-white-real;
-  border: 1px solid #f0f4fb;
   border-radius: $border_radius;
-  box-shadow: 0 .5625rem 2.8125rem 0 rgb(35 69 152 / 15%);
+  box-shadow: 0 29px 30px -25px rgba(0, 0, 0, .07);
   padding: $padding;
+
+  h3 {
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 0;
+  }
+
+  p {
+    font-size: var(--font-size-small);
+  }
 }

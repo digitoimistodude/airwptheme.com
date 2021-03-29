@@ -1,5 +1,25 @@
 .block-introduction {
+  overflow: visible;
+
+  .container {
+    overflow: visible;
+    padding-top: 0;
+  }
+
   .cols {
     @include grid(3);
+    grid-gap: 50px;
+    margin-top: -120px;
+  }
+
+  .col {
+    @include box-with-shadow();
+  }
+
+  svg {
+    display: block;
+    height: 60px;
+    margin-bottom: 2rem;
+    width: auto;
   }
 }
