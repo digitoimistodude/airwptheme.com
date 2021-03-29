@@ -1,0 +1,26 @@
+.site-footer {
+  padding-bottom: 8rem;
+  padding-top: 0;
+}
+
+.site-footer p {
+  align-items: center;
+  display: flex;
+  font-size: var(--font-size-small);
+  font-weight: 600;
+  justify-content: center;
+  margin: 0;
+  opacity: .7;
+  text-align: center;
+
+  svg {
+    height: 13px;
+    margin-left: 5px;
+    width: auto;
+  }
+
+  /* stylelint-disable a11y/no-display-none */
+  a::after {
+    display: none;
+  }
+}
