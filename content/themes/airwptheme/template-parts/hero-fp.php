@@ -24,7 +24,7 @@ $air_version = $obj->tag_name;
 ?>
 <section class="block block-hero-fp has-dark-bg">
   <div class="container">
-    <h1>Speed up your WordPress development</h1>
+    <h1 id="content">Speed up your WordPress development</h1>
     <p>WordPress Starter Theme that weights under 20 KB.</p>
 
     <p class="button-wrapper">
