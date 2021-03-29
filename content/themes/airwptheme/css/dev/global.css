@@ -3737,11 +3737,29 @@ ul.tags li a:not(.button):not(.no-text-link):focus {
 
 /* stylelint-disable selector-max-combinators, selector-max-compound-selectors, selector-max-specificity */
 .block-hero-fp {
+  align-items: center;
   background-color: #2a2d3e;
   color: #fff;
-  padding-bottom: 15%;
-  padding-top: 15%;
+  display: flex;
+  height: 100vh;
+  max-height: 800px;
+  padding-top: 60px;
   text-align: center;
+}
+
+@media (max-width: 1200px) {
+  .block-hero-fp {
+    height: auto;
+    max-height: 100%;
+    padding-bottom: 10%;
+    padding-top: calc(10% + 60px);
+  }
+}
+
+@media (max-width: 480px) {
+  .block-hero-fp {
+    padding-top: 72px;
+  }
 }
 
 .block-hero-fp h1,
@@ -3753,6 +3771,33 @@ ul.tags li a:not(.button):not(.no-text-link):focus {
   font-size: 70px;
   margin-bottom: 3rem;
   margin-top: 0;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+@media (max-width: 1400px) {
+  .block-hero-fp h1 {
+    font-size: 62px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .block-hero-fp h1 {
+    font-size: 42px;
+    padding: 0;
+  }
+}
+
+@media (max-width: 630px) {
+  .block-hero-fp h1 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .block-hero-fp h1 {
+    font-size: 26px;
+  }
 }
 
 .block-hero-fp p {
@@ -3774,11 +3819,14 @@ ul.tags li a:not(.button):not(.no-text-link):focus {
 .block-hero-fp .featured li {
   color: #fff;
   margin: 0;
+  padding: 0;
 }
 
 .block-hero-fp .featured ul {
   align-items: center;
   display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
   list-style: none;
 }
 
@@ -3818,25 +3866,56 @@ ul.tags li a:not(.button):not(.no-text-link):focus {
 
 .block-hero-fp .featured svg {
   height: 32px;
-  margin: 0 2rem;
+  margin: .5rem 2rem;
   width: auto;
+}
+
+@media (max-width: 560px) {
+  .block-hero-fp .featured svg {
+    height: 24px;
+  }
 }
 
 .block-hero-fp .featured .hongkiat svg {
   height: 32px;
 }
 
+@media (max-width: 560px) {
+  .block-hero-fp .featured .hongkiat svg {
+    height: 28px;
+  }
+}
+
 .block-hero-fp .featured .wpbeginner svg {
   height: 38px;
+}
+
+@media (max-width: 560px) {
+  .block-hero-fp .featured .wpbeginner svg {
+    height: 32px;
+  }
 }
 
 .block-hero-fp .featured .themessearch svg {
   height: 25px;
 }
 
+@media (max-width: 560px) {
+  .block-hero-fp .featured .themessearch svg {
+    height: 20px;
+  }
+}
+
 .block-hero-fp .featured .wplift svg {
   height: 47px;
   transform: translateY(-4px);
+}
+
+@media (max-width: 560px) {
+  .block-hero-fp .featured .wplift svg {
+    height: 38px;
+    transform: none;
+  }
 }
 
 .block-hero-fp .featured span {
