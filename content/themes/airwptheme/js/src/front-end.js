@@ -8,6 +8,7 @@ import LazyLoad from 'vanilla-lazyload';
 import getLocalization from './modules/localization';
 import styleExternalLinks from './modules/external-link';
 import './modules/gutenberg-helpers';
+import Macy from 'macy';
 // import './modules/sticky-nav.js'
 // import slick from 'slick-carousel';
 import 'what-input';
@@ -31,6 +32,21 @@ styleExternalLinks();
 var airwptheme_LazyLoad = new LazyLoad();
 // After your content has changed...
 airwptheme_LazyLoad.update();
+
+// Masonry for "Built with Air"
+var macy = Macy({
+  container: '.site-gallery',
+  trueOrder: false,
+  waitForImages: true,
+  margin: 80,
+  columns: 2,
+  breakAt: {
+      1200: 3,
+      940: 3,
+      520: 2,
+      400: 1
+  }
+});
 
 // jQuery start
 (function ($) {

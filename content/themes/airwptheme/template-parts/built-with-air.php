@@ -3,7 +3,7 @@
  * @package airwptheme
  */
 
-?>
+if ( have_rows( 'gallery' ) ) : ?>
 <section class="block block-built-with-air">
   <div class="container">
     <h2>Built with Air</h2>
@@ -12,5 +12,20 @@
 </section>
 
 <div class="site-gallery">
+  <?php while ( have_rows( 'gallery' ) ) : the_row();
+    // Fields
+    $image = get_sub_field( 'image' );
+    $url = get_sub_field( 'url' );
+  ?>
 
+    <?php if ( ! empty( $image ) ) : ?>
+      <?php if ( ! empty( $url ) ) : ?>
+        <a href="<?php echo esc_url( $url ); ?>">
+          <img src="<?php echo esc_url( $image['sizes']['large'] ); ?>" alt="" />
+        </a>
+      <?php endif; ?>
+    <?php endif; ?>
+
+  <?php endwhile; ?>
 </div>
+<?php endif; ?>

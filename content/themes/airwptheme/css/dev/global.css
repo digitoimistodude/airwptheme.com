@@ -3602,6 +3602,29 @@ input[type="checkbox"]:not(:checked):not(:focus) + label:hover::before {
   }
 }
 
+/* stylelint-disable a11y/no-display-none */
+.site-gallery a.is-external-link::after {
+  display: none;
+}
+
+.site-gallery img {
+  box-shadow: 0 2rem 3rem rgba(37, 55, 134, 0.2);
+  height: auto;
+  margin: 8rem;
+  transition: all 0.35s cubic-bezier(0.19, 1, 0.22, 1);
+  width: 100%;
+}
+
+.site-gallery a:nth-child(odd) {
+  margin-top: -80px;
+}
+
+.site-gallery a:hover img,
+.site-gallery a:focus img {
+  box-shadow: 0 2rem 3rem rgba(37, 55, 134, 0.4);
+  transform: translateY(-1.5rem);
+}
+
 .block-built-with-air {
   background-color: #fff;
 }

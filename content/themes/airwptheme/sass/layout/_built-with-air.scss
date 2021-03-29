@@ -1,3 +1,28 @@
+/* stylelint-disable a11y/no-display-none */
+.site-gallery a.is-external-link::after {
+  display: none;
+}
+
+.site-gallery img {
+  box-shadow: 0 2rem 3rem rgba(37, 55, 134, .2);
+  height: auto;
+  margin: 8rem;
+  transition: all .35s cubic-bezier(.19, 1, .22, 1);
+  width: 100%;
+}
+
+.site-gallery {
+  a:nth-child(odd) {
+    margin-top: -80px;
+  }
+
+  a:hover img,
+  a:focus img {
+    box-shadow: 0 2rem 3rem rgba(37, 55, 134, .4);
+    transform: translateY(-1.5rem);
+  }
+}
+
 .block-built-with-air {
   background-color: $color-white-real;
 
