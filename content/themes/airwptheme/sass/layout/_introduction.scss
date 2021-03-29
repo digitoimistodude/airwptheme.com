@@ -1,6 +1,10 @@
 .block-introduction {
   overflow: visible;
 
+  h2 {
+    opacity: 0;
+  }
+
   .container {
     overflow: visible;
     padding-top: 0;

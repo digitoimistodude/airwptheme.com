@@ -3947,6 +3947,10 @@ ul.tags li a:not(.button):not(.no-text-link):focus {
   overflow: visible;
 }
 
+.block-introduction h2 {
+  opacity: 0;
+}
+
 .block-introduction .container {
   overflow: visible;
   padding-top: 0;
