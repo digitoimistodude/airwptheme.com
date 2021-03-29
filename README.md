@@ -12,4 +12,4 @@ This project is built on [digitoimistodude/dudestack](https://github.com/digitoi
 
 ## Built with Air
 
-If you want your site to be added, please open an issue to this repository.
+If you want your site to be added, please <a href="https://github.com/digitoimistodude/airwptheme.com/issues">open an issue</a> to this repository.
