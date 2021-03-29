@@ -1,14 +1,18 @@
 // Error 404 title
-.block-error-404 {
+.block.block-error-404 {
+  background-color: $color-white;
+
   .container {
     @media (min-width: $container-mobile) {
-      padding-bottom: 10%;
-      padding-top: 10%;
+      padding-bottom: 15%;
+      padding-top: 15%;
     }
   }
 
   h1 {
     @include responsive-font(42px, 200px);
+    color: $color-darkgrey;
+    font-weight: 700;
     margin-bottom: 2rem;
   }
 }

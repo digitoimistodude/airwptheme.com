@@ -43,6 +43,19 @@ $width-sub-menu: 22rem;
   list-style: none;
 }
 
+body:not(.home) {
+  .site-title a,
+  .site-title span,
+  .site-title a span,
+  .menu-items .menu-item a {
+    color: $color-darkgrey;
+  }
+
+  .site-title path {
+    fill: $color-darkgrey;
+  }
+}
+
 @media only screen and (min-width: $width-max-mobile) {
   .menu-items a::after {
     display: none;

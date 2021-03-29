@@ -559,6 +559,17 @@ a.is-external-link.no-external-link-indicator::after {
   list-style: none;
 }
 
+body:not(.home) .site-title a,
+body:not(.home) .site-title span,
+body:not(.home) .site-title a span,
+body:not(.home) .menu-items .menu-item a {
+  color: #545773;
+}
+
+body:not(.home) .site-title path {
+  fill: #545773;
+}
+
 @media only screen and (min-width: 960px) {
   .menu-items a::after {
     display: none;
@@ -4670,26 +4681,32 @@ body *[aria-invalid="true"] {
   color: #eaf1f8;
 }
 
+.block.block-error-404 {
+  background-color: #f0fafb;
+}
+
 @media (min-width: 480px) {
-  .block-error-404 .container {
-    padding-bottom: 10%;
-    padding-top: 10%;
+  .block.block-error-404 .container {
+    padding-bottom: 15%;
+    padding-top: 15%;
   }
 }
 
-.block-error-404 h1 {
+.block.block-error-404 h1 {
   font-size: 42px;
+  color: #545773;
+  font-weight: 700;
   margin-bottom: 2rem;
 }
 
 @media screen and (min-width: 320px) {
-  .block-error-404 h1 {
+  .block.block-error-404 h1 {
     font-size: calc(42px + 158 * ((100vw - 320px) / 1600));
   }
 }
 
 @media screen and (min-width: 1920px) {
-  .block-error-404 h1 {
+  .block.block-error-404 h1 {
     font-size: 200px;
   }
 }
