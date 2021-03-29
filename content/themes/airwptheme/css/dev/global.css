@@ -2779,7 +2779,17 @@ pre {
   margin: 0;
   opacity: .7;
   text-align: center;
+  white-space: nowrap;
   /* stylelint-disable a11y/no-display-none */
+}
+
+@media (max-width: 700px) {
+  .site-footer p {
+    display: block;
+    margin: 0 auto;
+    max-width: 70%;
+    white-space: normal;
+  }
 }
 
 .site-footer p svg {
@@ -3637,9 +3647,39 @@ input[type="checkbox"]:not(:checked):not(:focus) + label:hover::before {
 .site-gallery img {
   box-shadow: 0 2rem 3rem rgba(37, 55, 134, 0.2);
   height: auto;
-  margin: 8rem;
+  margin-bottom: 4rem;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 4rem;
   transition: all 0.35s cubic-bezier(0.19, 1, 0.22, 1);
   width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .site-gallery img {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+
+.site-gallery {
+  margin: 0 auto;
+  overflow: visible;
+  width: calc(100% - 20rem);
+}
+
+@media (max-width: 1580px) {
+  .site-gallery {
+    width: calc(100% - 4rem);
+  }
+}
+
+.site-gallery div {
+  overflow: visible;
+}
+
+.site-gallery a {
+  text-align: center;
 }
 
 .site-gallery a:nth-child(odd) {

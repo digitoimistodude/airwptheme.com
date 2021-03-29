@@ -6,12 +6,36 @@
 .site-gallery img {
   box-shadow: 0 2rem 3rem rgba(37, 55, 134, .2);
   height: auto;
-  margin: 8rem;
+  margin-bottom: 4rem;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 4rem;
   transition: all .35s cubic-bezier(.19, 1, .22, 1);
   width: 100%;
+
+  @media (max-width: 1200px) {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
 }
 
 .site-gallery {
+  margin: 0 auto;
+  overflow: visible;
+  width: calc(100% - 20rem);
+
+  @media (max-width: 1580px) {
+    width: calc(100% - 4rem);
+  }
+
+  div {
+    overflow: visible;
+  }
+
+  a {
+    text-align: center;
+  }
+
   a:nth-child(odd) {
     margin-top: -80px;
   }

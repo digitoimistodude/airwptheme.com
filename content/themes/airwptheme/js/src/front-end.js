@@ -38,13 +38,26 @@ var macy = Macy({
   container: '.site-gallery',
   trueOrder: false,
   waitForImages: true,
-  margin: 80,
+  margin: {
+    x: 80,
+    y: 80,
+  },
   columns: 2,
   breakAt: {
-      1200: 3,
-      940: 3,
-      520: 2,
-      400: 1
+    1200: {
+      margin: {
+        x: 30,
+        y: 30,
+      },
+      columns: 3
+    },
+    760: {
+      margin: {
+        x: 30,
+        y: 30,
+      },
+      columns: 2
+    }
   }
 });
 
