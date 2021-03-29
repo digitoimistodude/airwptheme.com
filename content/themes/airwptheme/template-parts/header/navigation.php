@@ -4,8 +4,8 @@
  *
  * @Author: Roni Laukkarinen
  * @Date: 2020-05-11 13:22:26
- * @Last Modified by:   Roni Laukkarinen
- * @Last Modified time: 2021-02-24 17:17:18
+ * @Last Modified by: Roni Laukkarinen
+ * @Last Modified time: 2021-03-29 23:12:53
  *
  * @package airwptheme
  */
@@ -28,7 +28,7 @@ namespace Air_Light;
 
     <ul class="menu-items">
       <li class="menu-item"><a href="https://airwptheme.com/demo">Demo</a></li>
-      <li class="menu-item social separator-left"><a href="https://www.linkedin.com/company/3179463/admin/"><?php include get_theme_file_path( '/svg/linkedin.svg' ); ?><span class="screen-reader-text">LinkedIn</span></a></li>
+      <li class="menu-item social separator-left"><a href="https://www.linkedin.com/company/digitoimisto-dude-oy"><?php include get_theme_file_path( '/svg/linkedin.svg' ); ?><span class="screen-reader-text">LinkedIn</span></a></li>
       <li class="menu-item social"><a href="https://profiles.wordpress.org/digitoimistodude/"><?php include get_theme_file_path( '/svg/wordpress.svg' ); ?><span class="screen-reader-text">WordPress</span></a></li>
       <li class="menu-item social"><a href="https://www.facebook.com/digitoimistodude/"><?php include get_theme_file_path( '/svg/facebook.svg' ); ?><span class="screen-reader-text">Facebook</span></a></li>
       <li class="menu-item social"><a href="https://twitter.com/dudetoimisto"><?php include get_theme_file_path( '/svg/twitter.svg' ); ?><span class="screen-reader-text">Twitter</span></a></li>
