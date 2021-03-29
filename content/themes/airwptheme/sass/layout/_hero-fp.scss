@@ -37,7 +37,7 @@
   }
 
   @media (max-width: $container-mobile) {
-    padding-top: $height-navigation-mobile;
+    padding-top: 0;
   }
 
   h1,
@@ -180,6 +180,10 @@
       display: block;
       font-weight: 600;
       margin: 6rem auto 2rem;
+
+      @media (max-width: 600px) {
+        margin-top: 5rem;
+      }
     }
   }
 }

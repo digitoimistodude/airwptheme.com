@@ -11,13 +11,27 @@
   }
 
   .cols {
-    @include grid(3);
-    grid-gap: 50px;
+    @include grid(3, $gutter_x: 50px, $gutter_y: 50px);
     margin-top: -120px;
+
+    @media (max-width: 1068px) {
+      @include grid(2, $gutter_x: 32px, $gutter_y: 32px);
+    }
+
+    @media (max-width: 600px) {
+      @include grid(1, $gutter_x: 32px, $gutter_y: 32px);
+      margin-top: -90px;
+    }
   }
 
   .col {
     @include box-with-shadow();
+
+    @media (max-width: 1210px) {
+      h3 {
+        font-size: 18px;
+      }
+    }
   }
 
   svg {
@@ -25,5 +39,9 @@
     height: 60px;
     margin-bottom: 2rem;
     width: auto;
+
+    @media (max-width: 900px) {
+      height: 48px;
+    }
   }
 }
