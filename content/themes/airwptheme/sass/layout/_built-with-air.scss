@@ -1,0 +1,22 @@
+.block-built-with-air {
+  background-color: $color-white-real;
+
+  .container {
+    margin-bottom: 8rem;
+    margin-top: 8rem;
+    max-width: 1400px;
+  }
+
+  .description {
+    max-width: 680px;
+
+    a {
+      @extend %textlink;
+    }
+
+    a.is-external-link:hover::after,
+    a.is-external-link:focus::after {
+      background-image: url('../../svg/external-link-white.svg');
+    }
+  }
+}

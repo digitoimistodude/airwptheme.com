@@ -22,7 +22,7 @@ $json = file_get_contents( $version_cachefile ); // phpcs:ignore
 $obj = json_decode( $json );
 $air_version = $obj->tag_name;
 ?>
-<section class="block block-hero-fp">
+<section class="block block-hero-fp has-dark-bg">
   <div class="container">
     <h1>Speed up your WordPress development</h1>
     <p>WordPress Starter Theme that weights under 20 KB.</p>

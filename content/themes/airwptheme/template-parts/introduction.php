@@ -4,7 +4,7 @@
  */
 
 ?>
-<section class="block block-introduction">
+<section class="block block-introduction has-light-bg">
   <div class="container">
     <h2>Why Air?</h2>
 

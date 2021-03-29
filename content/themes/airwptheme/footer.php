@@ -21,8 +21,6 @@ namespace Air_Light;
 
 <footer id="colophon" class="site-footer has-dark-bg">
 
-  
-
   <p class="back-to-top"><a href="#page" class="js-trigger top no-text-link no-external-link-indicator" data-mt-duration="300"><span class="screen-reader-text"><?php echo esc_html( get_default_localization( 'Back to top' ) ); ?></span><?php include get_theme_file_path( '/svg/chevron-up.svg' ); ?></a></p>
 
 </footer><!-- #colophon -->

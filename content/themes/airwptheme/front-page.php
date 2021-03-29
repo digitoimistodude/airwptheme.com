@@ -21,6 +21,7 @@ get_header(); ?>
   <?php
     get_template_part( 'template-parts/hero-fp' );
     get_template_part( 'template-parts/introduction' );
+    get_template_part( 'template-parts/built-with-air' );
   ?>
 
 </main>
