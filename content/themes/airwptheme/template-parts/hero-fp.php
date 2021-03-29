@@ -5,7 +5,20 @@
 
 // Get latest GitHub version
 ini_set( 'user_agent', 'Mozilla/4.0 (compatible; MSIE 6.0)' ); // phpcs:ignore
-$json = file_get_contents( 'https://api.github.com/repos/digitoimistodude/air-light/releases/latest' ); // phpcs:ignore
+
+// Fetch data and set up simple cache
+$version_url = 'https://api.github.com/repos/digitoimistodude/air-light/releases/latest';
+$version_cachefile = get_theme_file_path( 'inc/cache/version.json' );
+$version_cachetime = 7200; // 2 hours
+
+// If cache file does not exist, let's create it
+if ( ! file_exists( $version_cachefile ) ) {
+  touch( $version_cachefile );
+  copy( $version_url, $version_cachefile );
+}
+
+// Fetch version
+$json = file_get_contents( $version_cachefile ); // phpcs:ignore
 $obj = json_decode( $json );
 $air_version = $obj->tag_name;
 ?>
@@ -15,7 +28,7 @@ $air_version = $obj->tag_name;
     <p>WordPress Starter Theme that weights under 20 KB.</p>
 
     <p class="button-wrapper">
-      <a href="https://github.com/digitoimistodude/air-light#usage" class="button button-large"><?php include get_theme_file_path( '/svg/github.svg' ); ?> Get Air <?php echo esc_html( $air_version ); ?></a>
+      <a href="https://github.com/digitoimistodude/air-light" class="button button-large"><?php include get_theme_file_path( '/svg/github.svg' ); ?> Get Air <?php echo esc_html( $air_version ); ?></a>
     </p>
 
     <div class="featured">

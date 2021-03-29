@@ -9,24 +9,43 @@
     <h2>Why Air?</h2>
 
     <div class="cols">
+    <div class="col">
+        <h3>
+          <?php include get_theme_file_path( '/svg/package.svg' ); ?>
+          A perfect starting point for your next project
+        </h3>
+        <p>We created this theme from scratch back in 2016 when we grew tired of too bloated starter themes. Finally a theme you can hack to make your new project instead of wasting hours of time by removing useless code!</p>
+      </div>
+
+      <div class="col">
+        <h3>
+          <?php include get_theme_file_path( '/svg/trash.svg' ); ?>
+          No features you never use
+        </h3>
+        <p>We have disabled widgets, post formats, Jetpack support, (Threaded) comments, Underscores Template tags and sidebar from our theme. These are almost never needed and just add extra weight.</p>
+      </div>
+
       <div class="col">
         <h3>
           <?php include get_theme_file_path( '/svg/github.svg' ); ?>
-          Open source
+          Open source freedom
         </h3>
-        <p>As Air-light is a open source project it will get weekly updates. You can contribute your own changes and follow the roadmap online.</p>
+        <p>No licenses or payments. As Air-light is a open source project it will get weekly updates. You can contribute your own changes and follow the roadmap online. Air-light is our way to give back.</p>
       </div>
 
       <div class="col">
         <h3>
           <?php include get_theme_file_path( '/svg/a11y.svg' ); ?>
-          Accessible &amp; WCAG 2.0 AAA Compliant
+          Accessible &amp; WCAG 2.0 AAA-level compliancy
         </h3>
         <p>Air-light has built in accessible navigation patterns for screen readers but also tools for accessible development. Say no to inaccessible web!</p>
       </div>
 
       <div class="col">
-        <h3>Small file sizes</h3>
+        <h3>
+          <?php include get_theme_file_path( '/svg/speed.svg' ); ?>
+          Fast &amp; small
+        </h3>
         <p>CSS weights only 13 KB and JavaScript 7.8 KB. This means faster loading times, because there is no excess code. With Air you build speed in mind.</p>
       </div>
 
@@ -35,7 +54,7 @@
           <?php include get_theme_file_path( '/svg/wordpress.svg' ); ?>
           Custom Post Type Support
         </h3>
-        <p>CPTs and taxonomies are our daily bread. That's why they are included so that adding them is easiest thing ever. No more CPT generators!</p>
+        <p>Custom Post Types and taxonomies are our daily bread. This is why they are included by default so that adding them is easiest thing ever. No more CPT generators!</p>
       </div>
 
       <div class="col">
@@ -43,7 +62,15 @@
           <?php include get_theme_file_path( '/svg/acf-gutenberg.svg' ); ?>
           Full support for ACF and Gutenberg
         </h3>
-        <p>With Air it's very easy to create custom elements with Advanced Custom Fields and Gutenberg. The theme even has a boilerplate for creating modular flexible elements.</p>
+        <p>With Air it's very easy to create custom elements with Advanced Custom Fields and Gutenberg. You can even create your own Gutenberg blocks with ACF.</p>
+      </div>
+
+      <div class="col">
+        <h3>
+          <?php include get_theme_file_path( '/svg/vuejs.svg' ); ?>
+          Modern JavaScript
+        </h3>
+        <p>Like Vue.js, ES5 or Mithril? With Air-light it's easy to use any modern JavaScript frameworks. JS is built with gulp and webpack and npm is baked-in so only sky is the limit!</p>
       </div>
 
       <div class="col">
@@ -59,15 +86,7 @@
           <?php include get_theme_file_path( '/svg/php.svg' ); ?>
           Modern PHP without templating languages
         </h3>
-        <p>No "fancy" templating languages in the way. There's no need to reinvent the bicycle. Code WordPress like you are used to with traditional PHP. We only used Namespaced PHP, but that's it!</p>
-      </div>
-
-      <div class="col">
-        <h3>
-          <?php include get_theme_file_path( '/svg/trash.svg' ); ?>
-          No features you never use
-        </h3>
-        <p>We have disabled widgets, post formats, Jetpack support, (Threaded) comments, Underscores Template tags and sidebar from our theme. These are almost never needed and just add extra weight.</p>
+        <p>No "fancy" templating languages in the way. There's no need to reinvent the bicycle. Code WordPress like you are used to with traditional PHP. We only used namespaced PHP, but that's it!</p>
       </div>
 
       <div class="col">
@@ -84,14 +103,6 @@
           Translation-ready
         </h3>
         <p>No untranslatable strings! Air-light comes with Finnish and English built in but it is very easy to add your own language. You can use po-files or ask_e function with Polylang.</p>
-      </div>
-
-      <div class="col">
-        <h3>
-          <?php include get_theme_file_path( '/svg/gulp.svg' ); ?>
-          Modern JavaScript
-        </h3>
-        <p>Like Vue.js or Mithril? With Air-light it's easy to use any modern JavaScript frameworks. JS is built with gulp and webpack and npm is baked-in so only sky is the limit!</p>
       </div>
     </div>
 
