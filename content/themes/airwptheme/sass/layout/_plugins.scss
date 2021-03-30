@@ -1,0 +1,63 @@
+.block-plugins {
+  background-color: $color-white-real;
+
+  .container {
+    margin-bottom: 4rem;
+    padding-top: 0;
+  }
+
+  h2 {
+    margin-bottom: 4rem;
+  }
+
+  h3,
+  p {
+    font-size: var(--font-size-small);
+    margin: 0;
+  }
+
+  h3 {
+    color: $color-text-github;
+    margin: 0 0 1rem;
+  }
+
+  h3 a svg {
+    fill: $color-text-github;
+    margin-right: .8rem;
+  }
+
+  h3 a {
+    align-items: center;
+    color: $color-link-github;
+    display: inline-flex;
+    font-weight: 600;
+  }
+
+  p {
+    font-size: var(--font-size-tiny);
+  }
+
+  .repos {
+    @include grid(3, $gutter_x: 50px, $gutter_y: 50px);
+
+    @media (max-width: 1068px) {
+      @include grid(2, $gutter_x: 32px, $gutter_y: 32px);
+    }
+
+    @media (max-width: 600px) {
+      @include grid(1, $gutter_x: 32px, $gutter_y: 32px);
+    }
+  }
+
+  .repo {
+    background-color: $color-white-real;
+    border: 1px solid $color-border-github;
+    border-radius: 6px;
+    padding: 1.8rem;
+
+    /* stylelint-disable a11y/no-display-none */
+    h3 a::after {
+      display: none;
+    }
+  }
+}

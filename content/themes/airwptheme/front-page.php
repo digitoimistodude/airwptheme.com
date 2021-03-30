@@ -22,6 +22,7 @@ get_header(); ?>
     get_template_part( 'template-parts/hero-fp' );
     get_template_part( 'template-parts/introduction' );
     get_template_part( 'template-parts/built-with-air' );
+    get_template_part( 'template-parts/plugins' );
   ?>
 
 </main>
