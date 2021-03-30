@@ -30,7 +30,7 @@
           <?php include get_theme_file_path( '/svg/github.svg' ); ?>
           Open source freedom
         </h3>
-        <p>No licenses or payments. As Air-light is a open source project it will get weekly updates. You can contribute your own changes and follow the roadmap online. Air-light is our way to give back.</p>
+        <p>No licenses or payments. Because Air-light is an open source project it will get weekly (sometimes even daily) updates. You can contribute your own changes and follow the roadmap online. Air-light is our way to give back.</p>
       </div>
 
       <div class="col">
@@ -62,7 +62,7 @@
           <?php include get_theme_file_path( '/svg/acf-gutenberg.svg' ); ?>
           Full support for ACF and Gutenberg
         </h3>
-        <p>With Air it's very easy to create custom elements with Advanced Custom Fields and Gutenberg. You can even create your own Gutenberg blocks with ACF.</p>
+        <p>With Air it's very efficient to create custom elements with Advanced Custom Fields and Gutenberg. You can even create your own Gutenberg blocks with ACF. Best from both worlds.</p>
       </div>
 
       <div class="col">
@@ -70,7 +70,7 @@
           <?php include get_theme_file_path( '/svg/vuejs.svg' ); ?>
           Modern JavaScript
         </h3>
-        <p>Like Vue.js, ES5 or Mithril? With Air-light it's easy to use any modern JavaScript frameworks. JS is built with gulp and webpack and npm is baked-in so only sky is the limit!</p>
+        <p>Like Vue.js, ES5 or Mithril? With Air-light it's easy to use any modern JavaScript frameworks. JS is built with gulp and webpack and npm is baked-in so only sky is the limit! Things are unminified in development and properly compressed in production environments.</p>
       </div>
 
       <div class="col">
@@ -94,7 +94,7 @@
           <?php include get_theme_file_path( '/svg/google.svg' ); ?>
           SEO friendly
         </h3>
-        <p>Google and search engines love WordPress. As Air-light is built using the latest standards, it is the best fit for search engine optimized websites. Yoast or SEO Framework, it's your call!</p>
+        <p>Google and search engines love WordPress. Air-light is built using the latest standards so that means it is the best fit for search engine optimized websites. Spice things up with Yoast or SEO Framework, it's your call!</p>
       </div>
 
       <div class="col">
@@ -102,7 +102,7 @@
           <?php include get_theme_file_path( '/svg/translation.svg' ); ?>
           Translation-ready
         </h3>
-        <p>No untranslatable strings! Air-light comes with Finnish and English built in but it is very easy to add your own language. You can use po-files or ask_e function with Polylang.</p>
+        <p>No untranslatable strings! Air-light comes with Finnish and English built in but it is very easy to add your own language. You can use po-files, pll__ function with Polylang or ask_e helper function from our very own air-helper plugin.</p>
       </div>
     </div>
 

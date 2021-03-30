@@ -6,7 +6,7 @@
 ?>
 <section class="block block-plugins has-light-bg">
   <div class="container">
-    <h2>Check also our developer-friendly plugins</h2>
+    <h2>Extend your theme with our developer-friendly plugins</h2>
 
     <div class="repos">
       <div class="repo">
