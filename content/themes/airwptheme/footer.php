@@ -19,11 +19,10 @@ namespace Air_Light;
 
 </div><!-- #content -->
 
-<footer id="colophon" class="site-footer has-dark-bg">
-  <p>Air-light WordPress Starter Theme is an open-sourced project by <a href="https://www.dude.fi"><span class="screen-reader-text">DUDE</span><?php include get_theme_file_path( '/svg/logo-dude.svg' ); ?></a></p>
+<footer id="colophon" class="site-footer has-light-bg">
+  <p>Air-light WordPress Starter Theme is an open source project by <a href="https://www.dude.fi"><span class="screen-reader-text">DUDE</span><?php include get_theme_file_path( '/svg/logo-dude.svg' ); ?></a></p>
 
   <p class="back-to-top"><a href="#page" class="js-trigger top no-text-link no-external-link-indicator" data-mt-duration="300"><span class="screen-reader-text"><?php echo esc_html( get_default_localization( 'Back to top' ) ); ?></span><?php include get_theme_file_path( '/svg/chevron-up.svg' ); ?></a></p>
-
 </footer><!-- #colophon -->
 
 </div><!-- #page -->
