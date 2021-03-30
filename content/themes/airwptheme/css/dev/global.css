@@ -3343,6 +3343,7 @@ input[type="checkbox"]:not(:checked):not(:focus) + label:hover::before {
 .block-hero-fp .featured a:not(:hover) .logo-wplift .text-glyph,
 .block-hero-fp .featured a:not(:focus) .logo-wplift .text-glyph {
   stroke: #f0fafb;
+  stroke-width: 1.6;
 }
 
 .block-hero-fp .featured a:not(:hover) .text-invert,
