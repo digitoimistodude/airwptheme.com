@@ -39,7 +39,7 @@ $air_version = $obj->tag_name;
         <li><a class="wplift" aria-label="WPLift: 40+ Blank WordPress Starter Themes & Frameworks to Help You Kick-start Your Entrepreneurial Journey" href="https://wplift.com/wordpress-starter-themes"><?php include get_theme_file_path( '/svg/logo-wplift.svg' ); ?></a></li>
         <li><a class="wpbeginner" aria-label="WPBeginner:
 19 Best WordPress Starter Themes for Developers in 2021" href="https://www.wpbeginner.com/wp-themes/21-best-wordpress-starter-themes-for-developers/"><?php include get_theme_file_path( '/svg/logo-wpbeginner.svg' ); ?></a></li>
-        <li><a class="themessearch" aria-label="themessearch: Top 10+ Best Free Starter Themes for WordPress Theme Development" href="https://www.wpbeginner.com/wp-themes/21-best-wordpress-starter-themes-for-developers/"><?php include get_theme_file_path( '/svg/logo-themessearch.svg' ); ?></a></li>
+        <li><a class="themessearch" aria-label="themessearch: Top 10+ Best Free Starter Themes for WordPress Theme Development" href="https://www.themessearch.com/best-wordpress-themes/starter-themes/"><?php include get_theme_file_path( '/svg/logo-themessearch.svg' ); ?></a></li>
       </ul>
     </div>
   </div>
