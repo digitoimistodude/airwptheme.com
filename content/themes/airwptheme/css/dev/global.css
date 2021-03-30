@@ -3388,7 +3388,7 @@ input[type="checkbox"]:not(:checked):not(:focus) + label:hover::before {
 }
 
 .block-hero-fp .featured .wplift svg {
-  height: 48px;
+  height: 47px;
   transform: translateY(-4px);
 }
 
