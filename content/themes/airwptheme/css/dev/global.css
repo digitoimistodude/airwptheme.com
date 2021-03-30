@@ -3680,6 +3680,7 @@ input[type="checkbox"]:not(:checked):not(:focus) + label:hover::before {
 
 .site-gallery a {
   text-align: center;
+  width: 100%;
 }
 
 .site-gallery a:nth-child(odd) {
