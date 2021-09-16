@@ -14,7 +14,7 @@
   }
 }
 
-@media (max-width: 960px) {
+@media (max-width: 690px) {
   :root {
     --padding-site-header-vertical: 2rem;
   }
