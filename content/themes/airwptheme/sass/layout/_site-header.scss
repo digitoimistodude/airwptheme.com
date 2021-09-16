@@ -32,6 +32,7 @@
     align-items: center;
     color: $color-white;
     display: flex;
+    white-space: nowrap;
 
     .solid {
       opacity: 0;
