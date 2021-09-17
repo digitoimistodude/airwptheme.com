@@ -13,7 +13,7 @@ $color-active-main-level-mobile: choose-contrast-color($color-main);
 $color-main-level-mobile: choose-contrast-color($color-background-nav-mobile-layer);
 $color-separator-nav-mobile: rgba(choose-contrast-color($color-background-nav-mobile-layer), .1);
 $font-weight-main-level-mobile: 600;
-$height-navigation-mobile: 72px;
+$height-navigation-mobile: 66px;
 $dropdown-toggle-size-mobile: 12px;
 
 // Sub menu settings
@@ -306,10 +306,6 @@ $nav-open-from-direction: top;
   user-select: none;
   z-index: 100000;
 
-  @media (min-width: $width-max-mobile) {
-    display: none;
-  }
-
   // Modern stuff (::after is first line, without ::after is first)
   &:not(.toggled-on) .hamburger-inner {
     transition: width $transition-duration;
@@ -359,30 +355,6 @@ $nav-open-from-direction: top;
     display: none;
   }
 
-  @media (max-width: $width-max-mobile - 1px) {
-    display: block;
-
-    &.has-visible-label {
-      align-items: center;
-      display: flex;
-    }
-
-    &.has-visible-label .nav-toggle-label {
-      font-size: var(--font-size-nav-toggle-label);
-
-      // Hide on smallest phones
-      @media (max-width: 410px) {
-        display: none;
-      }
-    }
-
-    @media (min-width: 411px) {
-      &.has-visible-label .hamburger-box {
-        margin-right: 2rem;
-      }
-    }
-  }
-
   // Separate active colors for opened state
   &.is-active {
     color: $color-hamburger-active;
@@ -416,6 +388,34 @@ $nav-open-from-direction: top;
 
     span {
       color: $color-hamburger-active;
+    }
+  }
+
+  @media (min-width: $width-max-mobile) {
+    display: none;
+  }
+
+  @media (max-width: $width-max-mobile - 1px) {
+    display: block;
+
+    &.has-visible-label {
+      align-items: center;
+      display: flex;
+    }
+
+    &.has-visible-label .nav-toggle-label {
+      font-size: var(--font-size-nav-toggle-label);
+
+      // Hide on smallest phones
+      @media (max-width: 410px) {
+        display: none;
+      }
+    }
+
+    @media (min-width: 411px) {
+      &.has-visible-label .hamburger-box {
+        margin-right: 2rem;
+      }
     }
   }
 }

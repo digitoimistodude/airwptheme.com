@@ -53,7 +53,7 @@ $font-weight-headings: 500;
 
   // Vars in mobile
   @media (max-width: $container-mobile) {
-    --font-size-tiny: 16px;
+    --font-size-tiny: 15px;
     --font-size-small: 16px;
     --font-size-default: 16px;
   }
@@ -62,7 +62,7 @@ $font-weight-headings: 500;
   @media (max-width: 420px) {
     --font-size-nav-toggle-label: 13px;
     --font-size-extra-large: 16px;
-    --font-size-tiny: 14px;
+    --font-size-tiny: 12px;
     --font-size-small: 14px;
   }
 }

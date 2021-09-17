@@ -16,6 +16,11 @@
   padding-top: var(--padding-site-header-vertical);
   position: relative;
   z-index: 15;
+
+  @media (max-width: $width-max-mobile) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .site-title {
@@ -62,6 +67,13 @@
   .label {
     font-size: var(--font-size-tiny);
     font-weight: 700;
+
+    @media (max-width: $width-max-mobile) {
+      align-items: center;
+      display: inline-flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
 
   .by {
@@ -74,11 +86,21 @@
   .logo-air {
     color: $color-cyan-bright;
     margin-right: 1rem;
+
+    @media (max-width: 450px) {
+      height: 26px;
+      width: 26px;
+    }
   }
 
   .logo-dude {
     height: 15px;
     width: 70px;
+
+    @media (max-width: 450px) {
+      height: 11.78px;
+      width: 55px;
+    }
   }
 }
 
