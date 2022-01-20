@@ -1,6 +1,16 @@
 <?php
 /**
+ * Hero-fp.
+ *
+ * A file for front page hero.
+ *
+ * @Author:		Roni Laukkarinen
+ * @Date:   		2021-03-29 18:40:50
+ * @Last Modified by:   Roni Laukkarinen
+ * @Last Modified time: 2022-01-20 10:34:48
+ *
  * @package airwptheme
+ * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  */
 
 // Get latest GitHub version
@@ -25,7 +35,7 @@ $air_version = $obj->tag_name;
 <section class="block block-hero-fp has-dark-bg">
   <div class="container">
     <h1 id="content">Speed up your WordPress development</h1>
-    <p class="description">WordPress Starter Theme that weights under 20 KB. <span class="mobile">Try out the <a href="https://airwptheme.com/demo">demo</a>.</span></p>
+    <p class="description">WordPress Starter Theme that weights under 20 KB. <span class="mobile">Try out the <a href="https://airwptheme.com/demo">demo</a> or go to <a href="https://docs.airwptheme.com">docs</a>.</span></p>
 
     <p class="button-wrapper">
       <a href="https://github.com/digitoimistodude/air-light" class="button button-large"><?php include get_theme_file_path( '/svg/github.svg' ); ?> Get Air <?php echo esc_html( $air_version ); ?></a>

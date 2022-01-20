@@ -69,6 +69,10 @@ body:not(.home) {
   .menu-items .menu-item {
     align-items: center;
     display: flex;
+
+    a {
+      height: 16px;
+    }
   }
 
   .menu-items .menu-item.social a {
@@ -76,7 +80,7 @@ body:not(.home) {
     padding-right: 9px;
   }
 
-  .menu-items .menu-item.social.separator-left a {
+  .menu-items .menu-item.separator-left a {
     border-left: 1px solid $color-main-level;
     padding-left: 21px;
   }
@@ -93,22 +97,6 @@ body:not(.home) {
       background-color: transparent;
       position: absolute;
       width: 100%;
-    }
-  }
-
-  @media only screen and (max-width: $width-max-mobile) {
-    ul li:focus > ul,
-    ul li:hover > ul {
-      display: block;
-    }
-  }
-
-  // Disable animations on IE10 + IE11
-  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-    // Enable hovers
-    ul li:focus > ul,
-    ul li:hover > ul {
-      display: block;
     }
   }
 
@@ -323,6 +311,29 @@ body:not(.home) {
     transform: rotate(-90deg) rotateX(180deg);
   }
 
+  // Don't use gap filler in sub menu items
+  // Acceptable use of display: none here, for visual/technical purposes
+  /* stylelint-disable a11y/no-display-none */
+  .sub-menu .menu-item-has-children::after {
+    display: none;
+  }
+
+  @media only screen and (max-width: $width-max-mobile) {
+    ul li:focus > ul,
+    ul li:hover > ul {
+      display: block;
+    }
+  }
+
+  // Disable animations on IE10 + IE11
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    // Enable hovers
+    ul li:focus > ul,
+    ul li:hover > ul {
+      display: block;
+    }
+  }
+
   // Smooth animation
   @if $use-dropdown-toggle-animation == true {
     .menu-item.menu-item-has-children > .dropdown-toggle.toggled-on svg,
@@ -339,13 +350,6 @@ body:not(.home) {
       transform: translateY(0%) rotate(90deg);
     }
     /* stylelint-enable */
-  }
-
-  // Don't use gap filler in sub menu items
-  // Acceptable use of display: none here, for visual/technical purposes
-  /* stylelint-disable a11y/no-display-none */
-  .sub-menu .menu-item-has-children::after {
-    display: none;
   }
   /* stylelint-enable */
 

@@ -582,11 +582,14 @@ body:not(.home) .site-title path {
     align-items: center;
     display: flex;
   }
+  .menu-items .menu-item a {
+    height: 16px;
+  }
   .menu-items .menu-item.social a {
     padding-left: 9px;
     padding-right: 9px;
   }
-  .menu-items .menu-item.social.separator-left a {
+  .menu-items .menu-item.separator-left a {
     border-left: 1px solid rgba(240, 250, 251, 0.5);
     padding-left: 21px;
   }
@@ -595,23 +598,6 @@ body:not(.home) .site-title path {
     position: absolute;
     width: 100%;
   }
-}
-
-@media only screen and (min-width: 690px) and (max-width: 690px) {
-  ul li:focus > ul,
-  ul li:hover > ul {
-    display: block;
-  }
-}
-
-@media only screen and (min-width: 690px) and (-ms-high-contrast: active), only screen and (min-width: 690px) and (-ms-high-contrast: none) {
-  ul li:focus > ul,
-  ul li:hover > ul {
-    display: block;
-  }
-}
-
-@media only screen and (min-width: 690px) {
   .nav-toggle {
     display: none;
   }
@@ -777,6 +763,27 @@ body:not(.home) .site-title path {
   .sub-menu .dropdown-toggle.toggled-on svg {
     transform: rotate(-90deg) rotateX(180deg);
   }
+  /* stylelint-disable a11y/no-display-none */
+  .sub-menu .menu-item-has-children::after {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 690px) and (max-width: 690px) {
+  ul li:focus > ul,
+  ul li:hover > ul {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 690px) and (-ms-high-contrast: active), only screen and (min-width: 690px) and (-ms-high-contrast: none) {
+  ul li:focus > ul,
+  ul li:hover > ul {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 690px) {
   .menu-item.menu-item-has-children > .dropdown-toggle.toggled-on svg,
   .menu-item.menu-item-has-children:hover > .dropdown-toggle svg,
   .menu-item.menu-item-has-children:focus > .dropdown-toggle svg {
@@ -789,10 +796,6 @@ body:not(.home) .site-title path {
     transform: translateY(0%) rotate(90deg);
   }
   /* stylelint-enable */
-  /* stylelint-disable a11y/no-display-none */
-  .sub-menu .menu-item-has-children::after {
-    display: none;
-  }
   /* stylelint-enable */
   .menu-item-has-children::before {
     /* stylelint-disable sh-waqar/declaration-use-variable */
