@@ -7,7 +7,7 @@
  * @Author: Roni Laukkarinen
  * @Date: 2020-05-11 13:17:32
  * @Last Modified by:   Roni Laukkarinen
- * @Last Modified time: 2022-02-02 13:41:14
+ * @Last Modified time: 2022-02-02 17:47:52
  *
  * @package airwptheme
  */
@@ -23,7 +23,7 @@ namespace Air_Light;
   <meta charset="<?php bloginfo( 'charset' ); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="profile" href="http://gmpg.org/xfn/11">
-  <script defer data-domain="airwptheme.com" src="https://plausible.peikko.us/js/plausible.js"></script>
+  <script defer data-domain="airwptheme.com" src="https://analytics.dude.fi/js/plausible.js"></script>
 
   <?php wp_head(); ?>
 
