@@ -100,6 +100,7 @@ Config::define( 'DISALLOW_FILE_EDIT', true );
 Config::define( 'DISALLOW_FILE_MODS', false );
 // Limit the number of post revisions that WordPress stores (true (default WP): store every revision)
 Config::define( 'WP_POST_REVISIONS', env( 'WP_POST_REVISIONS' ) ?: true );
+Config::define( 'MAILGUN_USEAPI', true );
 
 /**
  * Debugging Settings
