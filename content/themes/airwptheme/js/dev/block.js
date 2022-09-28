@@ -104,7 +104,7 @@ eval("/**\n * Declare the block you'd like to style.\n * Duplicate and customize
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = __webpack_require__(/*! /Users/rolle/Projects/airwptheme/content/themes/airwptheme/js/src/block.js */\"./content/themes/airwptheme/js/src/block.js\");\n\n\n//# sourceURL=webpack:///multi_./content/themes/airwptheme/js/src/block.js?");
+eval("module.exports = __webpack_require__(/*! /Users/rolle/Projects/airwptheme.com/content/themes/airwptheme/js/src/block.js */\"./content/themes/airwptheme/js/src/block.js\");\n\n\n//# sourceURL=webpack:///multi_./content/themes/airwptheme/js/src/block.js?");
 
 /***/ })
 
