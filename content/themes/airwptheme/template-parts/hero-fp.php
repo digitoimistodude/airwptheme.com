@@ -7,7 +7,7 @@
  * @Author:		Roni Laukkarinen
  * @Date:   		2021-03-29 18:40:50
  * @Last Modified by:   Roni Laukkarinen
- * @Last Modified time: 2022-01-20 10:34:48
+ * @Last Modified time: 2022-09-28 14:43:04
  *
  * @package airwptheme
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
@@ -46,7 +46,7 @@ $air_version = $obj->tag_name;
       <ul>
         <li><a class="hongkiat" aria-label="Hongkiat: Fresh Resources for Web Designers and Developers (December 2017)" href="https://www.hongkiat.com/blog/designers-developers-monthly-12-2017/"><?php include get_theme_file_path( '/svg/logo-hongkiat.svg' ); ?></a></li>
         <li><a class="speckyboy" aria-label="Speckyboy Design Magazine: The Top Starter & Barebone Themes for WordPress Development" href="https://speckyboy.com/wordpress-starter-themes/"><?php include get_theme_file_path( '/svg/logo-speckyboy.svg' ); ?></a></li>
-        <li><a class="wplift" aria-label="WPLift: 40+ Blank WordPress Starter Themes & Frameworks to Help You Kick-start Your Entrepreneurial Journey" href="https://wplift.com/wordpress-starter-themes"><?php include get_theme_file_path( '/svg/logo-wplift.svg' ); ?></a></li>
+        <li><a class="tophermcculloch" aria-label="Topher McCulloch: Best WordPress Starter Themes for Developers with Gutenberg Support in 2022" href="https://tophermcculloch.com/2022/09/best-wordpress-starter-themes-for-developers-with-gutenberg-support-in-2022/"><?php include get_theme_file_path( '/svg/logo-tophermcculloch.svg' ); ?></a></li>
         <li><a class="wpbeginner" aria-label="WPBeginner:
 19 Best WordPress Starter Themes for Developers in 2021" href="https://www.wpbeginner.com/wp-themes/21-best-wordpress-starter-themes-for-developers/"><?php include get_theme_file_path( '/svg/logo-wpbeginner.svg' ); ?></a></li>
         <li><a class="themessearch" aria-label="themessearch: Top 10+ Best Free Starter Themes for WordPress Theme Development" href="https://www.themessearch.com/best-wordpress-themes/starter-themes/"><?php include get_theme_file_path( '/svg/logo-themessearch.svg' ); ?></a></li>

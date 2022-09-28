@@ -197,6 +197,14 @@
       }
     }
 
+    .tophermcculloch svg {
+      height: 25px;
+
+      @media (max-width: 560px) {
+        height: 20px;
+      }
+    }
+
     span {
       display: block;
       font-weight: 600;

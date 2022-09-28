@@ -853,7 +853,7 @@ body:not(.home) .site-title path {
 }
 
 .hamburger.is-active:hover {
-  opacity: 0.8;
+  opacity: 1;
 }
 
 .hamburger.is-active .hamburger-inner,
@@ -915,7 +915,7 @@ body:not(.home) .site-title path {
 }
 
 .hamburger--3dx.is-active .hamburger-inner {
-  background-color: transparent !important;
+  background-color: transparent;
   transform: rotateY(180deg);
 }
 
@@ -943,7 +943,7 @@ body:not(.home) .site-title path {
 }
 
 .hamburger--3dx-r.is-active .hamburger-inner {
-  background-color: transparent !important;
+  background-color: transparent;
   transform: rotateY(-180deg);
 }
 
@@ -971,7 +971,7 @@ body:not(.home) .site-title path {
 }
 
 .hamburger--3dy.is-active .hamburger-inner {
-  background-color: transparent !important;
+  background-color: transparent;
   transform: rotateX(-180deg);
 }
 
@@ -999,7 +999,7 @@ body:not(.home) .site-title path {
 }
 
 .hamburger--3dy-r.is-active .hamburger-inner {
-  background-color: transparent !important;
+  background-color: transparent;
   transform: rotateX(180deg);
 }
 
@@ -1027,7 +1027,7 @@ body:not(.home) .site-title path {
 }
 
 .hamburger--3dxy.is-active .hamburger-inner {
-  background-color: transparent !important;
+  background-color: transparent;
   transform: rotateX(180deg) rotateY(180deg);
 }
 
@@ -1055,7 +1055,7 @@ body:not(.home) .site-title path {
 }
 
 .hamburger--3dxy-r.is-active .hamburger-inner {
-  background-color: transparent !important;
+  background-color: transparent;
   transform: rotateX(180deg) rotateY(180deg) rotateZ(-180deg);
 }
 
@@ -1355,7 +1355,7 @@ body:not(.home) .site-title path {
 .hamburger--emphatic.is-active .hamburger-inner {
   transition-delay: 0s;
   transition-timing-function: ease-out;
-  background-color: transparent !important;
+  background-color: transparent;
 }
 
 .hamburger--emphatic.is-active .hamburger-inner::before {
@@ -1397,7 +1397,7 @@ body:not(.home) .site-title path {
 .hamburger--emphatic-r.is-active .hamburger-inner {
   transition-delay: 0s;
   transition-timing-function: ease-out;
-  background-color: transparent !important;
+  background-color: transparent;
 }
 
 .hamburger--emphatic-r.is-active .hamburger-inner::before {
@@ -1584,7 +1584,7 @@ body:not(.home) .site-title path {
 
 .hamburger--spring.is-active .hamburger-inner {
   transition-delay: 0.22s;
-  background-color: transparent !important;
+  background-color: transparent;
 }
 
 .hamburger--spring.is-active .hamburger-inner::before {
@@ -1654,7 +1654,7 @@ body:not(.home) .site-title path {
 
 .hamburger--stand.is-active .hamburger-inner {
   transform: rotate(90deg);
-  background-color: transparent !important;
+  background-color: transparent;
   transition: transform 0.075s 0s cubic-bezier(0.215, 0.61, 0.355, 1), background-color 0s 0.15s linear;
 }
 
@@ -1687,7 +1687,7 @@ body:not(.home) .site-title path {
 
 .hamburger--stand-r.is-active .hamburger-inner {
   transform: rotate(-90deg);
-  background-color: transparent !important;
+  background-color: transparent;
   transition: transform 0.075s 0s cubic-bezier(0.215, 0.61, 0.355, 1), background-color 0s 0.15s linear;
 }
 
@@ -2003,7 +2003,6 @@ body:not(.home) .site-title path {
   top: 0;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   z-index: 100000;
 }
@@ -3068,11 +3067,6 @@ textarea::-moz-placeholder, select::-moz-placeholder, input[type="text"]::-moz-p
   opacity: .4;
 }
 
-textarea:-ms-input-placeholder, select:-ms-input-placeholder, input[type="text"]:-ms-input-placeholder, input[type="tel"]:-ms-input-placeholder, input[type="url"]:-ms-input-placeholder, input[type="password"]:-ms-input-placeholder, input[type="number"]:-ms-input-placeholder, input[type="month"]:-ms-input-placeholder, input[type="week"]:-ms-input-placeholder, input[type="email"]:-ms-input-placeholder, input[type="search"]:-ms-input-placeholder {
-  color: #545773;
-  opacity: .4;
-}
-
 textarea::placeholder,
 select::placeholder,
 input[type="text"]::placeholder,
@@ -3105,11 +3099,6 @@ input[type="search"]:focus {
 }
 
 textarea:focus::-moz-placeholder, select:focus::-moz-placeholder, input[type="text"]:focus::-moz-placeholder, input[type="tel"]:focus::-moz-placeholder, input[type="url"]:focus::-moz-placeholder, input[type="password"]:focus::-moz-placeholder, input[type="number"]:focus::-moz-placeholder, input[type="month"]:focus::-moz-placeholder, input[type="week"]:focus::-moz-placeholder, input[type="email"]:focus::-moz-placeholder, input[type="search"]:focus::-moz-placeholder {
-  color: #222;
-  opacity: .8;
-}
-
-textarea:focus:-ms-input-placeholder, select:focus:-ms-input-placeholder, input[type="text"]:focus:-ms-input-placeholder, input[type="tel"]:focus:-ms-input-placeholder, input[type="url"]:focus:-ms-input-placeholder, input[type="password"]:focus:-ms-input-placeholder, input[type="number"]:focus:-ms-input-placeholder, input[type="month"]:focus:-ms-input-placeholder, input[type="week"]:focus:-ms-input-placeholder, input[type="email"]:focus:-ms-input-placeholder, input[type="search"]:focus:-ms-input-placeholder {
   color: #222;
   opacity: .8;
 }
@@ -3154,7 +3143,6 @@ input[type="checkbox"] + label {
   line-height: var(--checkbox-radio-line-height);
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
 
@@ -3447,6 +3435,16 @@ input[type="checkbox"]:not(:checked):not(:focus) + label:hover::before {
   .block-hero-fp .featured .wplift svg {
     height: 38px;
     transform: none;
+  }
+}
+
+.block-hero-fp .featured .tophermcculloch svg {
+  height: 25px;
+}
+
+@media (max-width: 560px) {
+  .block-hero-fp .featured .tophermcculloch svg {
+    height: 20px;
   }
 }
 
